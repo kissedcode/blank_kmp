@@ -1,0 +1,44 @@
+############### ide ####################
+
+*.iml
+.idea/*
+!.idea/ktlint.xml
+!.idea/codeInsightSettings.xml
+!.idea/workspace.xml
+!.idea/runConfigurations
+
+.fleet
+
+## gradle
+.gradle
+
+## kotlin
+.kotlin
+
+############### temp ###################
+
+## build files
+build
+
+############### local ##################
+
+## local configuration
+local.properties
+
+## local environment
+localenv.properties
+
+############### secrets ################
+
+## sign secret files
+sign
+sign.properties
+
+############### os #####################
+
+## macos stuff
+*.DS_Store
+
+## windows stuff
+Thumbs.db
+
