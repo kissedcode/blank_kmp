@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="android app" type="AndroidRunConfigurationType" factoryName="Android App">
-    <module name="blank_kmp.composeApp.main" />
+    <module name="blank_kmp.app.main" />
     <option name="DEPLOY" value="true" />
     <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
     <option name="DEPLOY_AS_INSTANT" value="false" />

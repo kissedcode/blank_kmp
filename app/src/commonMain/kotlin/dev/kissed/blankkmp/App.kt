@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import blank_kmp.composeapp.generated.resources.Res
-import blank_kmp.composeapp.generated.resources.compose_multiplatform
+import blank_kmp.app.generated.resources.Res
+import blank_kmp.app.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
