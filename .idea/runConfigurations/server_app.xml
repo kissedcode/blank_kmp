@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="server app" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="dev.kissed.blankkmp.ApplicationKt" />
+    <module name="blank_kmp.server.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
