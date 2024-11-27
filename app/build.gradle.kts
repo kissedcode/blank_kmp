@@ -46,7 +46,10 @@ kotlin {
         
         androidMain.dependencies {
             implementation(compose.preview)
+            
             implementation(libs.androidx.activity.compose)
+            implementation(libs.coil.view)
+            implementation(libs.coil.network.okhttp)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -55,8 +58,12 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+            implementation(libs.coil.compose)
+            implementation(libs.napier)
+            
             implementation(projects.shared)
         }
         desktopMain.dependencies {
