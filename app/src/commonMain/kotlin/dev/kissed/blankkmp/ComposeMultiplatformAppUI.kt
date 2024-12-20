@@ -11,11 +11,11 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview
-fun App() {
+fun ComposeMultiplatformAppUI(imageUrl: String? = null) {
     MaterialTheme {
         Box(Modifier.fillMaxSize()) {
             AsyncImage(
-                Constants.arnoldImageUrl, null,
+                imageUrl, null,
                 Modifier.align(Alignment.Center)
             )    
         }
