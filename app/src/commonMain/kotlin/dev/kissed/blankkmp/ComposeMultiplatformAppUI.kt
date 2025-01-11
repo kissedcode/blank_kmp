@@ -38,7 +38,7 @@ fun ComposeMultiplatformAppUI(imageUrl: String? = null) {
                 )
             } else {
                 Text(
-                    "Click to show image",
+                    "Click to show image.",
                     Modifier.align(Alignment.Center),
                     fontSize = 30.sp,
                 )
