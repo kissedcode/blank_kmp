@@ -52,6 +52,7 @@ kotlin {
             implementation(libs.androidx.runtime.livedata)
             implementation(libs.coil.view)
             implementation(libs.coil.network.okhttp)
+            implementation(libs.napier)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -65,13 +66,18 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.coil.compose)
             implementation(libs.kotlinx.coroutines.core)
-            implementation(libs.napier)
 
             implementation(projects.shared)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
+
+            implementation(libs.coil.network.okhttp)
             implementation(libs.kotlinx.coroutines.swing)
+            implementation(libs.napier)
+        }
+        wasmJsMain.dependencies {
+            implementation(libs.coil.network.ktor3)
         }
 
         commonTest.dependencies {

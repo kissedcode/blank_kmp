@@ -1,7 +1,7 @@
 package dev.kissed.blankkmp.util.performance
 
 import dev.kissed.blankkmp.util.concurrency.createSingleThreadDispatcher
-import io.github.aakira.napier.Napier
+import dev.kissed.blankkmp.util.logging.DebugLog
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,7 +14,8 @@ import kotlin.time.Duration.Companion.milliseconds
 
 class MainThreadBusyWatchdog {
 
-    private val watchdogDispatcher: CoroutineDispatcher = Dispatchers.createSingleThreadDispatcher("anr_watchdog")
+    private val watchdogDispatcher: CoroutineDispatcher =
+        Dispatchers.createSingleThreadDispatcher("anr_watchdog")
 
     fun CoroutineScope.startWatching() {
         launch(watchdogDispatcher + SupervisorJob()) {
@@ -34,7 +35,7 @@ class MainThreadBusyWatchdog {
                 }
 
                 if (failedPings > 5) {
-                    Napier.d("agon: ANR")
+                    DebugLog.d("ANR detected")
                 }
 
                 delay(PING_TIMEOUT)

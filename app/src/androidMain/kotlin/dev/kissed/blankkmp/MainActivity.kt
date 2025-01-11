@@ -8,7 +8,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.tooling.preview.Preview
 import dev.kissed.blankkmp.data.ImageRepositoryImpl
-import io.github.aakira.napier.Napier
+import dev.kissed.blankkmp.util.logging.DebugLog
 
 class MainActivity : ComponentActivity() {
     
@@ -20,8 +20,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Napier.d("MainActivity.onCreate")
-        
+        DebugLog.d("MainActivity.onCreate")
+
         setContent {
             val state by viewModel.states.observeAsState(null)
             ComposeMultiplatformAppUI(state)
