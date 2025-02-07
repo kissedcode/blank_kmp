@@ -2,7 +2,7 @@ name: app_web_deploy
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 permissions:
   contents: read
